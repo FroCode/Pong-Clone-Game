@@ -3,7 +3,7 @@ box-sizing: border-box;
     color: white;
 }
 :root {
-    --hue: 100;
+    --hue: 300;
     --saturation: 50%;
     --forground-color: hsl(var(--hue), var(--saturation), 75%);
     --background-color: hsl(var(--hue), var(--saturation), 20%);
@@ -45,4 +45,15 @@ body {
     font-weight: bold;
     font-size: 7vh;
     color: var(--forground-color)
+}
+.score > * {
+    flex-grow: 1;
+    flex-basis: 0;
+    margin: 1vh 0;
+    padding: 0 2vh ;
+    opacity: .5;
+}
+.score > :first-child {
+    text-align: right;
+    border-right: .5vh solid var(--forground-color);
 }
