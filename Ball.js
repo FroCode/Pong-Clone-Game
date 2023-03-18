@@ -17,7 +17,11 @@ export default class Ball {
     reset() {
         this.x = 50;
         this.y = 50;
-        this.direction{x: 075, y: 0.5}
+        this.direction = {x: 0.75, y: 0.5}
+        while (this.direction.x <= .2 || this.direction <= .9) {
+            const heading = randomNumberBetween(0.2 * Math.PI)
+            this.direction = { x: Math.cosh(heading), y: Math.sin(heading) }
+        }
     }
     update(delta) {
         this.x = 5
