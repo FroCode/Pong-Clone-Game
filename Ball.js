@@ -14,6 +14,11 @@ export default class Ball {
     set y(value) {
         this.ballElem.style.setProperty("--y", value)
     }
+    reset() {
+        this.x = 50;
+        this.y = 50;
+        this.direction{x: 075, y: 0.5}
+    }
     update(delta) {
         this.x = 5
         this.y = 15
